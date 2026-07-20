@@ -104,11 +104,11 @@ public class BaiTap13 {
 
    
     public static void inTongTungCot(int[][] a) {
-        int soHang = a.length;
-        int soCot = a[0].length;
-        for (int j = 0; j < soCot; j++) {
+       // int soHang = a.length;
+       // int soCot = a[0].length;
+        for (int j = 0; j < a[0].length; j++) { //duyet cot
             int tongCot = 0;
-            for (int i = 0; i < soHang; i++) {
+            for (int i = 0; i < a.length; i++) { //duyet dòng
                 tongCot += a[i][j];
             }
             System.out.println("Tong cot " + j + ": " + tongCot);
